@@ -1,5 +1,5 @@
 
-// just bit of recurrsion recall - let's warm up the brain.
+// just bit of recurrsion recall - let's warm up the brain
 
 // Problem: double values of an array in place
 function double(arr, idx = 0) {
@@ -47,4 +47,5 @@ function arraySum(arr) {
   return arr[0] + arraySum(arr.slice(1));
 }
 
-console.log(arraySum([1,2,3]));
+// console.log(arraySum([1,2,3]));
+
