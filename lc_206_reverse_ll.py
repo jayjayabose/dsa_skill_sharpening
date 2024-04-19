@@ -50,6 +50,9 @@ LOOP Curr through all nodes
 
 return dummy.head
 
+NOTES TO SELF
+- this is a three pointers slide
+
 
 
 """
