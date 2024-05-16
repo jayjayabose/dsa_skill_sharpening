@@ -1,6 +1,8 @@
 
 
 /*
+https://edabit.com/challenge/H8JABWQfYFN4ZSAxE
+
 PROBLEM:
 determine each abbreviation has one and only one matching word
 
