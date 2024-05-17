@@ -170,11 +170,7 @@ function distanceToNearestVowel(input) {
     }
   }
 
-  // for (let i = 0; i < input.length; i++) {
-    // let char = input[i];
   [...input].forEach((char, i) => {
-
-  
     if (vowels.includes(char)) {
       output[i] = 0;
       prevVowel = i;
