@@ -25,7 +25,7 @@ LOOP: i = 0, to i < length - 1
   swap i, minIdx values
 */
 
-// keep moving the lowest number to the frong
+// keep inserting the lowest number to the front
 function selectionSort(numbers) {
   const len = numbers.length;
   for (let i = 0; i < len; i++) {
