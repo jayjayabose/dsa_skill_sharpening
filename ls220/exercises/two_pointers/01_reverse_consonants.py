@@ -69,4 +69,3 @@ print(reverseConsonants("leetcode") == "deectole");
 print(reverseConsonants("example") == "elapmxe");
 print(reverseConsonants("Consonants") == "sotnonasnC");
 
-# // All test cases should log true
