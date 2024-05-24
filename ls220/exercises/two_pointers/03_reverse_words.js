@@ -89,6 +89,6 @@ console.log(reverseWords("JavaScript is fun") === "tpircSavaJ si nuf");
 console.log(reverseWords("Coding in the sun") === "gnidoC ni eht nus");
 console.log(reverseWords("Launch School") === "hcnuaL loohcS");
 
-// let myArray = [12, -2, 55, 68, 80];
-// [myArray[0], myArray[1]] = [myArray[1], myArray[0]];
-// console.log(myArray); // [-2,12,55,68,80]
+let myArray = [12, -2, 55, 68, 80];
+[myArray[0], myArray[1]] = [myArray[1], myArray[0]];
+console.log(myArray); // [-2,12,55,68,80]

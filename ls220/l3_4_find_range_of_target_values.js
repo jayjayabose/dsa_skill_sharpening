@@ -84,6 +84,8 @@ function findLeftMostIndexOfValue(arr, target) {
 
   while (left <= right) {
     let mid = Math.floor((left + right) / 2);
+
+    // leftmost index if: value is target and we are at end or next element is not target
     if (arr[mid] === target && (mid === 0 || arr[mid - 1] !== target)) {
       return mid;
     }
@@ -106,7 +108,6 @@ function findRightMostIndexOfValue(arr, target) {
 
     // rightmost index: vaue is found and we are at right end or array or next val is different
     if (arr[mid] === target && (mid === arr.length - 1 || arr[mid + 1] !== target)) {
-      // console.log('return early')
       return mid;
     }
 
@@ -117,15 +118,8 @@ function findRightMostIndexOfValue(arr, target) {
       // go left
       right = mid - 1;
     }
-    // if (target < arr[mid]) {
-    //   // go left
-    //   right = mid - 1;
-    // } else {
-    //   // go right
-    //   left = mid + 1;
-    // }
+
   }
-  // console.log('return late')
   return -1;
 }
 
