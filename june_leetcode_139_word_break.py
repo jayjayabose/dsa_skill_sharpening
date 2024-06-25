@@ -58,17 +58,16 @@ class Solution:
                 return True
             # recursive case
             else:
-                results = []
                 for word in wordDict:
                     s_front = s[0:len(word)]
                     
                     if s_front == word:
                         s_back = s[len(word):]
-                        results.append(_wordBreak(s_back, memo))
-                    else:
-                        results.append(False)
+                        if _wordBreak(s_back, memo):
+                            memo[s] = True
+                            return memo[s]
                 
-                memo[s] = any(results)
+                memo[s] = False
                 return memo[s]
         
         return _wordBreak(s)
